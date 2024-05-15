@@ -50,6 +50,11 @@ export default function useTecnologies() {
       source:
         "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
     },
+    {
+      name: "VITE",
+      source:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
+    },
   ];
 
   function getTechnologyImages(technologyNames) {

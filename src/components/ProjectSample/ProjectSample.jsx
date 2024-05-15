@@ -2,6 +2,7 @@ import useTecnologies from "../../hooks/useTecnologies";
 import styles from "./style.module.scss";
 
 export default function ProjectSample({
+  urlLink,
   projectName,
   imageSource,
   shortDescription,
@@ -13,15 +14,20 @@ export default function ProjectSample({
 
   return (
     <div className={styles.cardContent}>
-      <h1>{projectName}</h1>
-      <div className={styles.contentImage}>
-        <img src={imageSource} alt="projectImage" id={styles.projectImage} />
-      </div>
+      <a href={urlLink}>
+        <h1>{projectName}</h1>
+        <div className={styles.contentImage}>
+          <img src={imageSource} alt="projectImage" id={styles.projectImage} />
+        </div>
+      </a>
       <div>
-        <p>Descrição</p>
+        <h4 style={{ margin: "10px 0" }}>Descrição: </h4>
         <hr />
-        <p>{shortDescription}</p>
+        <p style={{ fontWeight: "400", textAlign: "center" }}>
+          {shortDescription}
+        </p>
         <hr />
+        <h4 style={{ margin: "10px 0" }}>Tecnologias:</h4>
         <div className={styles.listImages}>
           {imagesReturn.map((tech) => (
             <li>
