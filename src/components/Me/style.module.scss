@@ -1,0 +1,24 @@
+.container {
+  display: grid;
+  grid-template-areas: "lorem lorem photo";
+  grid-template-columns: 200px 1fr 1fr;
+  grid-template-rows: 3fr;
+  min-height: 50vh;
+  margin: 5vh 20px;
+  padding: 20px;
+  background-color: #c9c9c9;
+  color: #000;
+  border-radius: 10px;
+  .lorem {
+    grid-area: lorem;
+    font-size: 30px;
+    margin: 15px;
+  }
+  .photo {
+    grid-area: photo;
+    background-color: #f61919;
+    border-radius: 30px;
+    margin: 15px;
+    box-shadow: $box-shadow;
+  }
+}

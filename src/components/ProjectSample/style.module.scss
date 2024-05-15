@@ -1,0 +1,41 @@
+.cardContent {
+  max-width: 250px;
+  margin: 20px;
+  @include border-Color(#000);
+  border-radius: 15px;
+  padding: 15px;
+  .contentImage {
+    display: flex;
+    justify-content: center;
+    #projectImage {
+      border-radius: 10px;
+      width: 100%;
+      margin: 10px 0;
+      box-shadow: $discreet-box-shadow;
+    }
+  }
+  p {
+    margin: 10px;
+  }
+}
+
+.listImages {
+  display: flex;
+  list-style: none;
+  margin: 10px;
+  img {
+    object-fit: cover;
+    border-radius: 100%;
+    width: 2.5rem;
+    box-shadow: $discreet-box-shadow;
+    @include border-Color(#fff);
+    background-color: $background-page-color;
+  }
+  li {
+    margin-left: -10px;
+    transition: translate 250ms;
+    &:hover ~ li {
+      translate: 15px;
+    }
+  }
+}
