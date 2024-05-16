@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <div className={styles.header} id="header">
       <a href="#me">
-        <h1 id="logoName">GGRIFFINXD</h1>
+        <img src="/logo.png" alt="" />
       </a>
       <div style={{ marginLeft: "15vw" }}>
         <a className={styles.links} href="#me" title="Inicio">

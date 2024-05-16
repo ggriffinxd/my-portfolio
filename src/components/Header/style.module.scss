@@ -21,4 +21,14 @@
       color: #666;
     }
   }
+  img {
+    width: 12rem;
+    transition: 0.3s;
+    &:hover {
+      width: 11.5rem;
+      margin-left: 10px;
+      background-color: #111;
+      border-radius: 10px;
+    }
+  }
 }

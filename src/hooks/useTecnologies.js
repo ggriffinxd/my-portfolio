@@ -53,7 +53,7 @@ export default function useTecnologies() {
     {
       name: "VITE",
       source:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg ",
     },
   ];
 
