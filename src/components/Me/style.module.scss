@@ -6,19 +6,26 @@
   min-height: 50vh;
   margin: 5vh 20px;
   padding: 20px;
-  background-color: #c9c9c9;
-  color: #000;
+  background-color: $black-page;
+  color: #ffffff;
   border-radius: 10px;
   .lorem {
     grid-area: lorem;
-    font-size: 30px;
+    font-size: 36px;
     margin: 15px;
   }
   .photo {
     grid-area: photo;
-    background-color: #f61919;
     border-radius: 30px;
     margin: 15px;
     box-shadow: $box-shadow;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  p {
+    margin-bottom: 5px;
   }
 }

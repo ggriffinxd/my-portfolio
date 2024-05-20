@@ -3,7 +3,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import useCarousel from "../../hooks/useCarousel";
 
 export default function Carousel() {
-  const { items, responsive, slideNext, slidePrev } = useCarousel();
+  const { items, responsive } = useCarousel();
 
   return (
     <div>

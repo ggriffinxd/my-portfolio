@@ -1,6 +1,7 @@
 $box-shadow: 10px 10px 25px -5px rgba(0, 0, 0, 0.4);
 $background-page-color: #eaeaea;
 $discreet-box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
+$black-page: #262626;
 @mixin border-Color($color) {
   border: solid 2px $color;
 }
