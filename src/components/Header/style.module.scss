@@ -31,4 +31,14 @@
       border-radius: 10px;
     }
   }
+  @media (max-width: 700px) {
+    justify-content: center;
+  }
+}
+
+.links {
+  margin-left: 15vw;
+  @media (max-width: 700px) {
+    margin-left: 0;
+  }
 }

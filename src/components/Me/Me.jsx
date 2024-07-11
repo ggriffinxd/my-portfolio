@@ -1,6 +1,22 @@
+import { useEffect } from "react";
 import styles from "./style.module.scss";
+import { useState } from "react";
 
 export default function Me() {
+  const [larguraDaTela, setLarguraDaTela] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setLarguraDaTela(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [larguraDaTela]);
+
   return (
     <>
       <h1
@@ -30,9 +46,11 @@ export default function Me() {
           <p>Acompanhe à seguir algumas obras feitas por mim!</p>
           <p>Espero que goste XD.</p>
         </div>
-        <div className={styles.photo}>
-          <img src="/photo.jpeg" alt="personal-photo" />
-        </div>
+        {larguraDaTela < 700 ? null : (
+          <div className={styles.photo}>
+            <img src="/photo.jpeg" alt="personal-photo" />
+          </div>
+        )}
       </div>
     </>
   );

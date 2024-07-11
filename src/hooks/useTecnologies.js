@@ -28,7 +28,7 @@ export default function useTecnologies() {
     {
       name: "TAILWIND",
       source:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
     },
     {
       name: "NODE",
@@ -43,7 +43,7 @@ export default function useTecnologies() {
     {
       name: "SPRING",
       source:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg",
     },
     {
       name: "SASS",
@@ -54,6 +54,11 @@ export default function useTecnologies() {
       name: "VITE",
       source:
         "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg ",
+    },
+    {
+      name: "NEXT",
+      source:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
     },
   ];
 

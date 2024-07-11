@@ -5,6 +5,7 @@ export default function useCarousel() {
     400: { items: 1 },
     700: { items: 2 },
     1024: { items: 3 },
+    1300: { items: 4 },
   };
 
   const items = [
@@ -19,6 +20,15 @@ export default function useCarousel() {
     </div>,
     <div data-value="2" className="item">
       <ProjectSample
+        urlLink="https://capi-zip.vercel.app/"
+        projectName="Capizip"
+        shortDescription="Aplicação em conjunto, integrada com backend para encurtar links"
+        imageSource={"/prj6.png"}
+        technologies={["REACT", "NEXT", "TAILWIND", "SPRING"]}
+      />
+    </div>,
+    <div data-value="3" className="item">
+      <ProjectSample
         urlLink="https://github.com/ggriffinxd/lib-games"
         projectName="Lib-Games"
         shortDescription="Aplicação teste, simulando uma biblioteca de jogos com capa e nome"
@@ -26,7 +36,7 @@ export default function useCarousel() {
         technologies={["REACT", "VITE", "CSS"]}
       />
     </div>,
-    <div data-value="3" className="item">
+    <div data-value="4" className="item">
       <ProjectSample
         urlLink="https://github.com/ggriffinxd/CRUD-Finances"
         projectName="CRUD-Finances"
@@ -35,7 +45,7 @@ export default function useCarousel() {
         technologies={["HTML", "JAVASCRIPT", "CSS", "NODE"]}
       />
     </div>,
-    <div data-value="4" className="item">
+    <div data-value="5" className="item">
       <ProjectSample
         urlLink="https://github.com/ggriffinxd/Landpage-bootstrap"
         projectName="Landpage"
@@ -44,7 +54,7 @@ export default function useCarousel() {
         technologies={["HTML", "BOOTSTRAP", "SASS"]}
       />
     </div>,
-    <div data-value="5" className="item">
+    <div data-value="6" className="item">
       <ProjectSample
         urlLink="https://github.com/ggriffinxd/Calculadora-Cientifica"
         projectName="Calculadora"
@@ -53,7 +63,7 @@ export default function useCarousel() {
         technologies={["HTML", "JAVASCRIPT", "CSS"]}
       />
     </div>,
-    <div data-value="6" className="item">
+    <div data-value="7" className="item">
       <ProjectSample
         urlLink="https://github.com/ggriffinxd/JS-Bank"
         projectName="JS-Bank"
